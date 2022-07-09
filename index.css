@@ -2,12 +2,21 @@ body{
     font-family: 'Syne', sans-serif;
 }
 
-img{
+#logo{
+    width: 10vw;
+    /* filter: invert(50); */
+    mix-blend-mode: screen;
+    z-index: 2;
+
+}
+
+img.sup{
     float: left;
     display: block;
     width: 30vw;
     margin: 0;
     padding: 0;
+    z-index: -1;
 }
 
 p{
@@ -20,6 +29,7 @@ p{
     line-height: 6vw;
     float: left;
     display: block;
+    z-index: -1;
 }
 
 footer{
@@ -27,7 +37,11 @@ footer{
 }
 
 @media screen and (max-width: 1024px) {
-    img{
+    #logo{
+        width: 20vw;
+    }
+
+    img.sup{
         width: 60vw;
         margin-left: 20vw;
         margin-right: 20vw;
@@ -38,5 +52,6 @@ footer{
         line-height: 12vw;
         height: auto;
     }
+
 
 }
