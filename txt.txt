@@ -1,0 +1,21 @@
+for (var i = 0; i < 100; i++){
+    var posX = x.toString() + "px";
+    var posY = y.toString() + "px";
+    logo.style.left = posX;
+    logo.style.top = posY;
+    //dx = 6;
+   // dy = 8;
+   // x = x + dx;
+   // y = y + dy;
+    //setTimeout("alert('1-секундная задержка прошла');", 1000);
+
+}
+
+
+while (true){
+    async function move(){
+        await sleep(2000);
+        alert("Hi!");
+    }
+    move();
+}
