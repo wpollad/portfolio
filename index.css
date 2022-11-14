@@ -5,9 +5,15 @@ body{
 #logo{
     width: 10vw;
     /* filter: invert(50); */
-    mix-blend-mode: screen;
+    /* mix-blend-mode: screen; */
     z-index: 2;
+}
 
+#logo2{
+    width: 10vw;
+    /* filter: invert(50); */
+    /* mix-blend-mode: screen; */
+    z-index: -1;
 }
 
 img.sup{
@@ -16,7 +22,7 @@ img.sup{
     width: 30vw;
     margin: 0;
     padding: 0;
-    z-index: -1;
+    z-index: 1;
 }
 
 p{
@@ -30,10 +36,29 @@ p{
     float: left;
     display: block;
     z-index: -1;
+    color:  #2E2F31;
+    animation: colorText 5s infinite alternate;
+}
+
+@keyframes colorText {
+    50%{
+        color: #3D467C;
+    }
 }
 
 footer{
     display: inline-block;
+}
+
+body {
+    background: #F2E6CE;
+    animation: background 5s infinite alternate;
+}
+
+@keyframes background {
+    50% {
+        background: #F27830;
+    }
 }
 
 @media screen and (max-width: 1024px) {
