@@ -1,8 +1,21 @@
 body{
     font-family: 'Syne', sans-serif;
+    overflow: hidden;
+}
+
+header{
+    position: absolute;
+    font-size: 2vw;
+    top: calc(100vh - 3vw);
+    left: 1vw;
+}
+
+header a{
+   color: #d77136;
 }
 
 #logo{
+    pointer-events: none;
     width: 10vw;
     /* filter: invert(50); */
     /* mix-blend-mode: screen; */
@@ -10,6 +23,7 @@ body{
 }
 
 #logo2{
+    pointer-events: none;
     width: 10vw;
     /* filter: invert(50); */
     /* mix-blend-mode: screen; */
@@ -40,15 +54,28 @@ p{
     animation: colorText 5s infinite alternate;
 }
 
+#nick{
+    color: #c4b696;
+}
+
+a:hover{
+    color: #2E2F31 !important;
+}
+
+#site{
+    color: #d77136;
+}
+
+#git{
+    color:#c4b696;
+}
+
 @keyframes colorText {
     50%{
         color: #3D467C;
     }
 }
 
-footer{
-    display: inline-block;
-}
 
 body {
     background: #F2E6CE;
