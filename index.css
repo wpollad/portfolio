@@ -5,8 +5,8 @@ body{
 
 header{
     position: absolute;
-    font-size: 2vw;
-    top: calc(100vh - 3vw);
+    font-size: 4vh;
+    top: calc(100vh - 5vh);
     left: 1vw;
 }
 
